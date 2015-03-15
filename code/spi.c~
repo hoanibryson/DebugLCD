@@ -1,0 +1,23 @@
+/*
+ * Copyright 2015 (C) Hoani.Bryson@gmail.com
+ */
+
+#include "spi.h"
+
+static uint8_t out_buffer[SPI_WRITE_LENGTH];
+static uint16_t out_next = 0;
+static uint16_t out_last = 0;
+
+void spiInit(void){
+  
+}
+
+bool spiWriteBuffer(char * data_out, uint16_t length){
+  
+}
+
+/* SPI Interrupt Service Routine */
+__attribute__((interrupt(TIMERA0_VECTOR)))
+void spiIsr(void){
+
+}
